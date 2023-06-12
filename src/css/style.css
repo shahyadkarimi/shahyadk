@@ -1,3 +1,54 @@
 body {
-    font-family: "Poppins";
+  font-family: "Poppins";
+  background: #11071f;
+}
+
+/* navbar */
+
+.menu a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 5px;
+  background: #4900a8;
+  border-radius: 15px;
+  bottom: 0;
+  box-shadow: 0px 0px 7px 1px #4e00b3;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.menu a:hover::before {
+  opacity: 1;
+  width: 100%;
+}
+
+/* header */
+.pic-back {
+  filter: drop-shadow(0px 0px 70px #5900ff);
+}
+
+.circle::before {
+  content: "";
+  position: absolute;
+  width: 170px;
+  height: 60px;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  top: 3px;
+  left: -12px;
+  transform: rotate(-7deg);
+}
+
+.about-me h2::before {
+  content: "";
+  position: absolute;
+  width: 185px;
+  height: 20px;
+  background: rgb(55,48,163);
+  box-shadow: 0px 0px 15px rgb(67,56,202);
+  border-radius: 5px;
+  z-index: -1;
+  bottom: -1px;
+  left: -4px;
 }

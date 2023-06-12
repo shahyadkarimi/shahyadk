@@ -1,9 +1,12 @@
 import React from 'react'
 
+// components
+import Header from "../components/Header"
+
 const Home = () => {
     return (
-        <div>
-            
+        <div className="w-full">
+            <Header />
         </div>
     )
 }

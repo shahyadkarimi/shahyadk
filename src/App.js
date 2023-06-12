@@ -7,10 +7,12 @@ import "./css/style.css"
 
 // components
 import Home from "./pages/Home"
+import Navbar from "./components/Navbar"
 
 const App = () => {
   return (
-    <div>
+    <div className="px-48">
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
