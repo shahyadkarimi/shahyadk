@@ -6,20 +6,20 @@ import arrow from "../images/arrow.svg";
 
 const Header = () => {
   return (
-    <div className="header flex items-center justify-center gap-10 mt-10 text-slate-300">
+    <div className="header flex items-center justify-center gap-10 text-slate-300">
       <div className="mt-10 flex justify-center items-center">
         {/* picture & name */}
         <div className="pic-back relative -ml-20 mb-10">
           <div className="w-96">
             <img className="w-96" src={pic} alt="" />
           </div>
-          <h3 className="absolute -top-7 -right-40 text-sm">
+          <h3 className="absolute -top-4 -right-40 text-sm">
             Hello! I am{" "}
             <span className="text-indigo-500 text-lg font-semibold">
               shahyad karimi
             </span>
           </h3>
-          <img className="absolute top-[-10px] right-16" src={arrow} alt="" />
+          <img className="absolute top-0 right-16" src={arrow} alt="" />
         </div>
         {/* description */}
         <div className="desc flex flex-col gap-2 -ml-5">

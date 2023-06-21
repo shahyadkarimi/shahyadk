@@ -1,6 +1,12 @@
 body {
   font-family: "Poppins";
-  background: #11071f;
+  background: radial-gradient(circle, #6700b01a 10%, transparent 11%),
+    radial-gradient(circle at bottom left, #6700b059 5%, transparent 6%),
+    radial-gradient(circle at bottom right, #6700b059 5%, transparent 6%),
+    radial-gradient(circle at top left, #4f326328 5%, transparent 6%),
+    radial-gradient(circle at top right, #6700b028 5%, transparent 6%);
+  background-size: 3em 3em;
+  background-color: #180036;
 }
 
 /* navbar */
@@ -45,10 +51,40 @@ body {
   position: absolute;
   width: 185px;
   height: 20px;
-  background: rgb(55,48,163);
-  box-shadow: 0px 0px 15px rgb(67,56,202);
+  background: rgb(55, 48, 163);
+  box-shadow: 0px 0px 15px rgb(67, 56, 202);
   border-radius: 5px;
   z-index: -1;
   bottom: -1px;
   left: -4px;
+}
+
+/* skills */
+
+.skills h2::before {
+  content: "";
+  position: absolute;
+  width: 165px;
+  height: 20px;
+  background: rgb(55, 48, 163);
+  box-shadow: 0px 0px 15px rgb(67, 56, 202);
+  border-radius: 5px;
+  z-index: -1;
+  bottom: -1px;
+  left: -4px;
+}
+
+.skill-box {
+  background: linear-gradient(135deg, #180036da, #250053);
+  box-shadow: 0px 0px 10px #420095, inset 0px 0px 10px #420095;
+  border: 1px solid #420095;
+}
+
+/* progressbar */
+.CircularProgressbar-text {
+  font-weight: 600;
+}
+
+.CircularProgressbar {
+  filter: drop-shadow(0px 0px 4px #420095);
 }
