@@ -17,7 +17,7 @@ const Progressbar = ({ value, skill }) => {
               value={value}
               text={`${value}%`}
               styles={buildStyles({
-                pathTransitionDuration: 1,
+                pathTransitionDuration: 2,
                 pathColor: path,
                 textColor: text,
                 trailColor: trail,

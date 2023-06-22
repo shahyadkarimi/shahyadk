@@ -7,9 +7,9 @@ import skills from "../images/Skills.svg"
 
 const Skills = () => {
   return (
-    <div className="skills mb-52 text-slate-300 flex flex-col items-center -mt-7">
+    <div className="skills mb-10 text-slate-300 flex flex-col items-center -mt-7">
       <h2 className="text-4xl font-semibold relative">My Skills</h2>
-      <div className="my-skills flex gap-7 mt-7">
+      <div className="my-skills flex gap-7 mt-10">
         {/* html & css */}
         <div className="skill-box html-css w-44 h-48 rounded-xl flex justify-center items-center">
           <Progressbar value={95} skill={"HTML & CSS"} />

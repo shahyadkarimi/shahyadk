@@ -9,6 +9,22 @@ body {
   background-color: #180036;
 }
 
+/* scrollbar */
+body::-webkit-scrollbar {
+  width: 17px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #180036;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #180036da, #250053);
+  border: 2px solid #420095;
+  box-shadow: 0px 0px 10px #420095, inset 0px 0px 10px #420095;
+  border-radius: 100px;
+}
+
 /* navbar */
 
 .menu a::before {
@@ -87,4 +103,46 @@ body {
 
 .CircularProgressbar {
   filter: drop-shadow(0px 0px 4px #420095);
+}
+
+/* projects */
+
+.project-title::before {
+  content: "";
+  position: absolute;
+  width: 156px;
+  height: 20px;
+  background: rgb(55, 48, 163);
+  box-shadow: 0px 0px 15px rgb(67, 56, 202);
+  border-radius: 5px;
+  z-index: -1;
+  bottom: -1px;
+  left: -4px;
+}
+
+/* project */
+.shadow-pic {
+  box-shadow: 0px 0px 170px 25px #943fff;
+}
+
+.desc-box {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(30px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.live-btn {
+  background: linear-gradient(135deg, #180036da, #250053);
+  box-shadow: 0px 0px 10px #420095, inset 0px 0px 10px #420095;
+  border: 1px solid #420095;
+}
+
+.project:nth-child(odd) {
+  flex-direction: row;
+}
+
+.project-desc:nth-child(odd) {
+  margin-left: -100px;
 }
