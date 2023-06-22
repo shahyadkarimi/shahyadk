@@ -26,7 +26,7 @@ const Project = ({descPos}) => {
           </p>
         </div>
         <a
-          href="#"
+          href="https://google.com"
           className={`live-btn w-24 py-3 text-center text-lg text-slate-300 rounded-lg font-semibold ${descPos === "right" && "self-end"}`}
         >
           Live
