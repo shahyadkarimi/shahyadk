@@ -6,7 +6,7 @@ import arrow from "../images/arrow.svg";
 
 const Header = () => {
   return (
-    <div className="header flex items-center justify-center gap-10 text-slate-300">
+    <div className="header mt-2 flex items-center justify-center gap-10 text-slate-300">
       <div className="mt-10 flex justify-center items-center">
         {/* picture & name */}
         <div className="pic-back relative -ml-20 mb-10">

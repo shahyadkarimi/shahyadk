@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins";
   background: radial-gradient(circle, #6700b01a 10%, transparent 11%),
@@ -26,6 +30,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* navbar */
+.navbar {
+  background: linear-gradient(135deg, #180036da, #250053);
+  box-shadow: 0px 0px 10px #420095, inset 0px 0px 10px #420095;
+  border: 1px solid #420095;
+}
 
 .menu a::before {
   content: "";
@@ -47,7 +56,20 @@ body::-webkit-scrollbar-thumb {
 
 /* header */
 .pic-back {
+  animation: slideLeft 1s 1;
   filter: drop-shadow(0px 0px 70px #5900ff);
+}
+
+.desc {
+  animation: fade 1s 1;
+}
+
+.about-me {
+  animation: slideRight 1s 1;
+}
+
+.pic-back h3 {
+  animation: zoom 1.5s 1;
 }
 
 .circle::before {
@@ -76,6 +98,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* skills */
+.skills {
+  animation: slideUp 1s 1;
+}
 
 .skills h2::before {
   content: "";
@@ -145,4 +170,58 @@ body::-webkit-scrollbar-thumb {
 
 .project-desc:nth-child(odd) {
   margin-left: -100px;
+}
+
+/* scrollup */
+.scroll-up {
+  background: linear-gradient(135deg, #180036da, #250053);
+  box-shadow: 0px 0px 10px #420095, inset 0px 0px 10px #420095;
+  border: 1px solid #420095;
+  animation: zoom 0.2s 1;
+}
+
+/* animations */
+@keyframes zoom {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translate(-70%);
+  }
+  to {
+    transform: translate(0);
+  }
+}
+
+@keyframes slideRight {
+  from {
+    transform: translate(70%);
+  }
+  to {
+    transform: translate(0);
+  }
+}
+
+@keyframes fade {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
